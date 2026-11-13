@@ -35,7 +35,7 @@
 package io.github.qishr.cascara.logging.log4j;
 
 import io.github.qishr.cascara.common.diagnostic.Diagnostic;
-import io.github.qishr.cascara.common.diagnostic.format.FormatOptions;
+import io.github.qishr.cascara.common.diagnostic.format.FormatConfig;
 import io.github.qishr.cascara.common.diagnostic.log.Logger;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -99,7 +99,7 @@ public class Log4jLogger implements Logger {
     }
 
     @Override
-    public Logger setFormatOptions(FormatOptions options) {
+    public Logger setFormatConfig(FormatConfig options) {
         return this;
     }
 }
