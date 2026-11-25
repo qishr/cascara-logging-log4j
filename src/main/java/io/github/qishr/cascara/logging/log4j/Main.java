@@ -12,10 +12,10 @@ public class Main {
     public static void main(String[] args) {
 
         // 1. Disabled GlobalReporter's built-in console logging.
-        GlobalReporter.globalInstance().setSystemOutputEnabled(false);
+        GlobalReporter.get().setConsoleOutputEnabled(false);
 
         // 2. Add the Log4jLogger
-        GlobalReporter.globalInstance().addLogger(new Log4jLogger());
+        GlobalReporter.get().addLogger(new Log4jLogger());
 
         REPORTER.error(GenericMessage.ERROR, "Hello, World!");
     }
